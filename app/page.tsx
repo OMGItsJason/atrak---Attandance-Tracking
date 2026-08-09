@@ -1,9 +1,15 @@
+import Link from "next/link";
 
 export default function Home() {
   return (
-    <div className="flex flex-col flex-1 items-center justify-center bg-zinc-50 font-sans dark:bg-black">
+    <div className="">
       <main className="">
-        <p>Home Page</p>
+        <Link
+          href="/instructor-registration"
+          className="inline-block px-6 py-3 bg-blue-600 text-white font-semibold rounded-lg hover:bg-blue-700 transition-colors"
+        >
+          Instructor Registration
+        </Link>
       </main>
     </div>
   );
